@@ -15,7 +15,7 @@
     # the compositor's: the exclusive-keyboard workaround in main.rs exists because of sway-fork
     # `arrange_layers` semantics, and the resize storm the check guards against was driven by how
     # `enter-monitor` is delivered. Testing against a sibling implementation would test the wrong one.
-    nixscroll.url = "github:julian-corbet/nixscroll-corbet-ch";
+    nixscroll.url = "github:corbet-nix/nixscroll-corbet-ch";
   };
 
   outputs = { self, nixpkgs, nixscroll }:
