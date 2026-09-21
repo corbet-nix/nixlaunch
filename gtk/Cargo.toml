@@ -1,0 +1,18 @@
+[package]
+name = "nixlaunch"
+version = "0.1.0"
+edition = "2024"
+authors = ["Julian Y. Richard Corbet"]
+license = "MIT OR Apache-2.0"
+
+# The binary keeps the plain name: what a person installs and types is `nixlaunch`, whichever shell
+# happens to be drawing it.
+[[bin]]
+name = "nixlaunch"
+path = "src/main.rs"
+
+[dependencies]
+nixlaunch-core = { path = "../core" }
+gtk4 = { version = "0.11.4", features = ["v4_12"] }
+gtk4-layer-shell = "0.8.1"
+libc = "0.2"
